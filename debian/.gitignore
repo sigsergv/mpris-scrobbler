@@ -1,0 +1,5 @@
+.debhelper
+mpris-scrobbler
+*.substvars
+*-stamp
+files

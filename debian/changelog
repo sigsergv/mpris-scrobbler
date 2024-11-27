@@ -1,0 +1,6 @@
+mpris-scrobbler (0.5.3~git0d42d4f-1) unstable; urgency=medium
+
+  * initial DPKG release
+  * meson.build patched to enable successful build on ubuntu 22.04LTS
+
+ -- Sergey Stolyarov <sergei@regolit.com>  Wed, 27 Nov 2024 23:09:23 +0700
