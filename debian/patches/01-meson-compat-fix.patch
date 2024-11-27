@@ -1,0 +1,13 @@
+diff --git a/meson.build b/meson.build
+index c3fd6ed..55e1dbc 100644
+--- a/meson.build
++++ b/meson.build
+@@ -2,7 +2,7 @@ project('mpris-scrobbler', 'c',
+         default_options : [
+             'c_std=c11',
+             'buildtype=debug',
+-            'warning_level=everything',
++            'warning_level=3',
+             'unity=on',
+         ],
+         license : 'MIT')
