@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+# DH_VERBOSE = 1
+
+MPRIS_VERSION=0.5.6
+MPRIS_VERSION_REV=fba24da
+
+include /usr/share/dpkg/default.mk
+
+override_dh_auto_configure:
+	dh_auto_configure -- -Dlastfm_api_key=40f8fb972385fe0a4b889acd9865b3c2 -Dlastfm_api_secret=db5d4e5b8e9c62f93ee8c87d07678960 -Dwarning_level=3 -Dversion=$(MPRIS_VERSION)~git$(MPRIS_VERSION_REV)
+
+%:
+	dh $@

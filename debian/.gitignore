@@ -1,0 +1,6 @@
+.debhelper
+mpris-scrobbler
+*.substvars
+*.debhelper.log
+*-stamp
+files
