@@ -48,13 +48,13 @@ Then do build and/or ubuntu launchpad magic.
 
 Repeat steps below for each supported distribution. In my case: `jammy5` and `noble1`.
 
-Edit `debian/changelog` and replace `unstable` in top entry to corresponding distro name,
-also add distor suffix (`-jammy5`, `-noble1` etc) to version string.
+Edit `changelog` and replace `unstable` in top entry to corresponding distro name,
+also add distro suffix (`+jammy5`, `+noble1` etc) to version string.
 
 ```sh
 $ dpkg-buildpackage --build=source
 $ cd ..
-$ dput -f ppa:sigsergv/mpris-scrobbler mpris-scrobbler_0.5.3-4-jammy5_source.changes
+$ dput -f ppa:sigsergv/mpris-scrobbler mpris-scrobbler_0.5.3~git0d42d4f-1+jammy5_source.changes
 ```
 
 Wait for build to complete.
