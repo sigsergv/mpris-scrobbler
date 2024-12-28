@@ -9,7 +9,7 @@ Compiled binaries are available as PPA <https://launchpad.net/~sigsergv/+archive
 Download source package (version/tag is important!):
 
 ```sh
-$ wget 'https://github.com/mariusor/mpris-scrobbler/archive/0d42d4f.tar.gz' -O 'mpris-scrobbler_0.5.3~git0d42d4f.orig.tar.gz'
+$ wget 'https://github.com/mariusor/mpris-scrobbler/archive/c1144a5.tar.gz' -O 'mpris-scrobbler_0.5.5~gitc1144a5.orig.tar.gz'
 ```
 
 ## Build steps
@@ -54,7 +54,7 @@ also add distro suffix (`+jammy5`, `+noble1` etc) to version string.
 ```sh
 $ dpkg-buildpackage --build=source
 $ cd ..
-$ dput -f ppa:sigsergv/mpris-scrobbler mpris-scrobbler_0.5.3~git0d42d4f-1+jammy5_source.changes
+$ dput -f ppa:sigsergv/mpris-scrobbler mpris-scrobbler_0.5.3~gitc1144a5-1+jammy5_source.changes
 ```
 
 Wait for build to complete.
