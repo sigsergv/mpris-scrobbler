@@ -1,3 +1,10 @@
+mpris-scrobbler (0.5.5~gitc1144a5-1) unstable; urgency=medium
+
+  * upstream release 0.5.5
+  * removed workaround for long track name
+
+ -- Sergey Stolyarov <sergei@regolit.com>  Sat, 28 Dec 2024 08:39:16 +0300
+
 mpris-scrobbler (0.5.3~git0d42d4f-1) unstable; urgency=medium
 
   * initial DPKG release
