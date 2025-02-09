@@ -1,3 +1,10 @@
+mpris-scrobbler (0.5.6~gitfba24da-1) unstable; urgency=medium
+
+  * upstream release 0.5.6 (see release notes from original project repo)
+  * added API keys for this package
+
+ -- Sergey Stolyarov <sergei@regolit.com>  Sun, 09 Feb 2025 21:19:31 +0300
+
 mpris-scrobbler (0.5.5~gitc1144a5-1) unstable; urgency=medium
 
   * upstream release 0.5.5
