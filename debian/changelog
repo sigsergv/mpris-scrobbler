@@ -1,3 +1,9 @@
+mpris-scrobbler (0.5.7~git38c9949-1) unstable; urgency=medium
+
+  * upstream release 0.5.7 (see release notes from original project repo)
+
+ -- Sergey Stolyarov <sergei@regolit.com>  Mon, 16 Jun 2025 23:51:32 +0700
+
 mpris-scrobbler (0.5.6~gitfba24da-1) unstable; urgency=medium
 
   * upstream release 0.5.6 (see release notes from original project repo)

@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 # DH_VERBOSE = 1
 
-MPRIS_VERSION=0.5.6
-MPRIS_VERSION_REV=fba24da
+MPRIS_VERSION=0.5.7
+MPRIS_VERSION_REV=38c9949
 
 include /usr/share/dpkg/default.mk
 
