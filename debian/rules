@@ -2,7 +2,7 @@
 # DH_VERBOSE = 1
 
 MPRIS_VERSION=0.5.7
-MPRIS_VERSION_REV=38c9949
+MPRIS_VERSION_REV=4862b85
 
 include /usr/share/dpkg/default.mk
 

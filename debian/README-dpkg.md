@@ -11,7 +11,7 @@ We use separate branch `master-dpkg` that should be rebased when new upstream re
 Download source package (version/tag is important!):
 
 ```sh
-$ wget 'https://github.com/mariusor/mpris-scrobbler/archive/38c9949.tar.gz' -O 'mpris-scrobbler_0.5.7~git38c9949.orig.tar.gz'
+$ wget 'https://github.com/mariusor/mpris-scrobbler/archive/4862b85.tar.gz' -O 'mpris-scrobbler_0.5.7~git4862b85.orig.tar.gz'
 ```
 
 ## Build steps
@@ -44,10 +44,10 @@ Fetch most recent tag:
 
 ```sh
 $ git describe --tags --long --always upstream/master
-v0.5.7-0-g38c9949
+v0.5.7-0-g4862b85
 ```
 
-If there is a new version extract version name (`0.5.7`) and ref (`38c9949`), then rebase `origin/master-dpkg`
+If there is a new version extract version name (`0.5.7`) and ref (`4862b85`), then rebase `origin/master-dpkg`
 to `upstream/master`, also push tags to origin:
 
 ```sh
@@ -62,7 +62,7 @@ Update `rules` and specify new version and ref:
 
 ```
 MPRIS_VERSION=0.5.7
-MPRIS_VERSION_REV=38c9949
+MPRIS_VERSION_REV=4862b85
 ```
 
 Update this file `README-dpkg.md` (wget instructions etc).
@@ -81,7 +81,7 @@ also add distro suffix (`+jammy5`, `+noble1` etc) to version string.
 ```sh
 $ dpkg-buildpackage --build=source
 $ cd ..
-$ dput -f ppa:sigsergv/mpris-scrobbler mpris-scrobbler_0.5.7~git38c9949-1+jammy5_source.changes
+$ dput -f ppa:sigsergv/mpris-scrobbler mpris-scrobbler_0.5.7~git4862b85-1+jammy5_source.changes
 ```
 
 Wait for build to complete on project page <https://launchpad.net/~sigsergv/+archive/ubuntu/mpris-scrobbler>.
