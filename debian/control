@@ -1,0 +1,16 @@
+Source: mpris-scrobbler
+Section: net
+Priority: optional
+Maintainer: Sergey Stolyarov <sergei@regolit.com>
+Build-Depends: dpkg-dev, libevent-dev (>= 2.1.12-stable), libdbus-1-dev (>= 1.12.20), dbus, dbus-user-session,
+ libcurl4, libcurl4-openssl-dev, libjson-c-dev, libjson-c-dev, meson, m4, scdoc, debhelper (>= 10)
+Standards-Version: 3.9.1
+
+Package: mpris-scrobbler
+Architecture: any
+Depends: ${shlibs:Depends},
+ ${misc:Depends}, ksshaskpass | ssh-askpass | ssh-askpass-gnome | lxqt-openssh-askpass, openssh-client
+Description: Submit the currently playing song to libre.fm and compatible services
+ Is a minimalistic user daemon which submits the currently playing song to libre.fm and compatible services.
+ To retrieve song information it uses the MPRIS DBus interface, so it works with any media player that
+ exposes this interface.
